@@ -39,7 +39,7 @@ class _Overall_Stats_ScreenState extends State<Overall_Stats_Screen>
               height: MediaQuery.of(context).size.height * .03,
             ),
             FutureBuilder(
-                future: statsService.getWorldStats(),
+                future: statsService.getWorldStatsApi(),
                 builder: (context, AsyncSnapshot<WorldStatsModel> snapshot) {
 
                   if(!snapshot.hasData){

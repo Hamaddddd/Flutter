@@ -5,7 +5,7 @@ import 'package:covid_app/Services/Utilities/AppUrl.dart';
 import 'package:http/http.dart' as http;
 
 class StatsService {
-  Future<WorldStatsModel> getWorldStats() async {
+  Future<WorldStatsModel> getWorldStatsApi() async {
     final response = await http.get(Uri.parse(AppUrl.worldStatsUrl));
 
     if (response.statusCode == 200) {
